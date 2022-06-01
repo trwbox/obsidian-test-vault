@@ -13,10 +13,10 @@ LANDING_TITLE = "<span class='hvr-grow'>Hi, I'm Trent</span>"
 LOCAL_GRAPH = "y"
 PAGE_GRAPH = "y"
 PYTHON_VERSION = "3.8"
-REPO_URL = "https://github.com/ppeetteerrs/obsidian-pkm"
+REPO_URL = "https://github.com/trwbox/obsidian-pkm"
 SITE_TITLE = "Peter's 2<sup>nd</sup> <span class='hvr-pulse'>🧠</span>"
 SITE_TITLE_TAB = "Trent's Second 🧠"
-SITE_URL = "https://test-vault.trwbox.com/"
+SITE_URL = "https://www.trwbox.com/obsidian-test-vault"
 SLUGIFY = "y"
 STRICT_LINE_BREAKS = "y"
 TIMEZONE = "Asia/Hong_Kong"
@@ -28,7 +28,7 @@ package = "netlify-plugin-submit-sitemap"
 [plugins.inputs]
 
 # The base url of your site (optional, default = main URL set in Netlify)
-baseUrl = "https://test-vault.trwbox.com/"
+baseUrl = "https://www.trwbox.com/obsidian-test-vault"
 
 # Path to the sitemap URL (optional, default = /sitemap.xml)
 sitemapPath = "/sitemap.xml"
