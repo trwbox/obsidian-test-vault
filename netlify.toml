@@ -3,8 +3,43 @@ command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || tr
 publish = "public"
 
 [build.environment]
+FOOTER="Proudly"
 GANALYTICS = ""
 GRAPH_LINK_REPLACE = "y"
+GRAPH_OPTIONS = """
+        {
+        	nodes: {
+        		shape: "star",
+        		color: isDark() ? "#8c8e91" : "#dee2e6",
+        		font: {
+        			face: "Inter",
+        			color: isDark() ? "#c9cdd1" : "#616469",
+        			strokeColor: isDark() ? "#c9cdd1" : "#616469",
+        		},
+        		scaling: {
+        			label: {
+        				enabled: true,
+        			},
+        		},
+        	},
+        	edges: {
+        		color: { inherit: "both" },
+        		width: 0.8,
+        		smooth: {
+        			type: "continuous",
+        		},
+        		hoverWidth: 4,
+        	},
+        	interaction: {
+        		hover: true,
+        	},
+        	height: "100%",
+        	width: "100%",
+        	physics: {
+        		solver: "repulsion",
+        	},
+        }
+        """
 HOME_GRAPH = "y"
 LANDING_BUTTON = "<span class='shake-rotate shake-freeze'>Have a look?</span>"
 LANDING_DESCRIPTION = "<div style='margin-bottom: 1rem; margin-top: -3rem;'>My physical brain is <div style='font-size: 4rem; display: inline-block' class='animate__animated animate__pulse animate__infinite '>💤 </div> but my digital brain is active.</div>"
@@ -13,14 +48,15 @@ LANDING_TITLE = "<span class='hvr-grow'>Hi, I'm Trent</span>"
 LOCAL_GRAPH = "y"
 PAGE_GRAPH = "y"
 PYTHON_VERSION = "3.8"
-REPO_URL = "https://www.trwbox.com"
+REPO_URL = ""
+ROOT_SECTION_NAME = "root"
 SITE_TITLE = "Trent's 2<sup>nd</sup> <span class='hvr-pulse'>🧠</span>,\n curtosey of Peter"
 SITE_TITLE_TAB = "Trent's Second 🧠"
-SITE_URL = "https://www.trwbox.com/obsidian-test-vault/"
+SITE_URL = "https://obsidian-vault.trwbox.com"
 BASE_PATH = "obsidian-test-vault"
 SLUGIFY = "y"
 STRICT_LINE_BREAKS = "y"
-TIMEZONE = "Asia/Hong_Kong"
+TIMEZONE = "America/Central"
 ZOLA_VERSION = "0.15.2"
 
 [[plugins]]
@@ -29,7 +65,7 @@ package = "netlify-plugin-submit-sitemap"
 [plugins.inputs]
 
 # The base url of your site (optional, default = main URL set in Netlify)
-baseUrl = "https://www.trwbox.com/obsidian-test-vault/"
+baseUrl = "https://obsidian-zola.trwbox.com/"
 
 # Path to the sitemap URL (optional, default = /sitemap.xml)
 sitemapPath = "/sitemap.xml"
@@ -43,4 +79,3 @@ providers = [
   "bing",
   "yandex",
 ]
-
