@@ -3,7 +3,7 @@ command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || tr
 publish = "public"
 
 [build.environment]
-FOOTER="Proudly"
+FOOTER = "Proudly "
 GANALYTICS = ""
 GRAPH_LINK_REPLACE = "y"
 GRAPH_OPTIONS = """
@@ -48,7 +48,7 @@ LANDING_TITLE = "<span class='hvr-grow'>Hi, I'm Trent</span>"
 LOCAL_GRAPH = "y"
 PAGE_GRAPH = "y"
 PYTHON_VERSION = "3.8"
-REPO_URL = ""
+REPO_URL = "https://github.com/trwbox/obsidian-test-vault"
 ROOT_SECTION_NAME = "root"
 SITE_TITLE = "Trent's 2<sup>nd</sup> <span class='hvr-pulse'>🧠</span>,\n curtosey of Peter"
 SITE_TITLE_TAB = "Trent's Second 🧠"
